@@ -1,7 +1,7 @@
 pkgbase = xlibre-video-qxl
 	pkgdesc = XLibre qxl video driver
 	pkgver = 0.1.6.1
-	pkgrel = 1
+	pkgrel = 2
 	url = https://github.com/X11Libre/xf86-video-qxl
 	arch = aarch64
 	arch = x86_64
@@ -17,7 +17,6 @@ pkgbase = xlibre-video-qxl
 	depends = spice
 	depends = systemd-libs
 	optdepends = python: for Xspice
-	provides = xf86-video-qxl
 	conflicts = xf86-video-qxl
 	conflicts = xorg-server<1.20.0
 	conflicts = X-ABI-VIDEODRV_VERSION<28
