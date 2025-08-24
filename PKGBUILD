@@ -1,4 +1,5 @@
 # Maintainer:  Vitalii Kuzhdin <vitaliikuzhdin@gmail.com>
+# Maintainer:  artist for XLibre
 
 _basename="xf86-video-qxl"
 pkgname="${_basename//xf86/xlibre}"
@@ -9,9 +10,9 @@ arch=('aarch64' 'x86_64')
 url="https://github.com/X11Libre/${_basename}"
 license=('MIT')
 depends=('glibc' 'libxfont2' 'spice' 'systemd-libs')
-makedepends=('libcacard' 'spice-protocol' 'xlibre-server-devel' 'xorgproto' 'X-ABI-VIDEODRV_VERSION=28.0')
+makedepends=('libcacard' 'spice-protocol' 'xlibre-xserver-devel' 'xorgproto' 'X-ABI-VIDEODRV_VERSION=28.0')
 optdepends=('python: for Xspice')
-# provides=("${_basename}")
+provides=("${_basename}")
 conflicts=("${_basename}" 'xorg-server<1.20.0' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 groups=('xlibre-drivers')
 _pkgsrc="${_basename}-xlibre-${_basename}-${pkgver}"

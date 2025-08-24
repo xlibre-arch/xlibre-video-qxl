@@ -9,7 +9,7 @@ pkgbase = xlibre-video-qxl
 	license = MIT
 	makedepends = libcacard
 	makedepends = spice-protocol
-	makedepends = xlibre-server-devel
+	makedepends = xlibre-xserver-devel
 	makedepends = xorgproto
 	makedepends = X-ABI-VIDEODRV_VERSION=28.0
 	depends = glibc
@@ -17,6 +17,7 @@ pkgbase = xlibre-video-qxl
 	depends = spice
 	depends = systemd-libs
 	optdepends = python: for Xspice
+	provides = xf86-video-qxl
 	conflicts = xf86-video-qxl
 	conflicts = xorg-server<1.20.0
 	conflicts = X-ABI-VIDEODRV_VERSION<28
