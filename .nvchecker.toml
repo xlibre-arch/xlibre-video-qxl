@@ -1,5 +1,0 @@
-[xlibre-video-qxl]
-source = "git"
-git = "https://github.com/x11libre/xf86-video-qxl.git"
-include_regex = "xlibre-xf86-video-qxl-.*"
-prefix = "xlibre-xf86-video-qxl-"
